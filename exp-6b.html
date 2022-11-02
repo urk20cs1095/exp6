@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function changeStyle(){
+    var element = document.getElementById('box');
+ 
+    var bgcolor = document.getElementById('bgcolor').value;
+    var txtcolor = document.getElementById('txtcolor').value;
+    var size = parseColor = bgcolor;
+    element.style.fontSize = size+"px";
+    element.style.width = width+"px";
+    element.style.height =Int(document.getElementById('size').value);
+    var width = parseInt(document.getElementById('width').value);
+    var height = parseInt(document.getElementById('hth').value);
+    var opacity = parseInt(document.getElementById('opacity').value);
+    element.style.color = txtcolor;
+    element.style.backgroundColor = bgcolor;
+    element.style.fontSize = size+"px";
+    element.style.width = width+"px";
+    element.style.height = height+"px";
+    element.style.opacity = opacity;
+    }
+        </script>
+        
+    </head>
+    <body>
+        <div>
+         Select Background Color: <input type="color" id="bgcolor" onchange="changeStyle()"><br><br>
+         Select Text Color: <input type="color" id="txtcolor" onchange="changeStyle()"><br><br>  
+         Select Text size :  <input type="number" id="size" onchange="changeStyle()"><br><br>
+         Select box width :  <input type="number" id="width" onchange="changeStyle()"><br><br> 
+         Select box height :  <input type="number" id="hth" onchange="changeStyle()"><br><br>   
+         Select box opacity :  <input type="range" min=0 max=1 value="1" step="0.01" id="opacity" onchange="changeStyle()"><br><br>   
+        </div>
+        <div id="box" style="background-color: yellow;color: blue;width:200px;height: 100px;text-align: center;line-height: 100px;">
+            Hello
+        </div>
+    </body>
+</html>
